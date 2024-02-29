@@ -21,7 +21,7 @@ class _ScreenDashboardSqfliteState extends State<ScreenDashboardSqflite> {
       body:Container(
         child: ElevatedButton(onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (builder)=>HomePage()));
-        },child: Text("ADD "),),
+        },child: Text("ADD RECORD "),),
       )
     );
   }

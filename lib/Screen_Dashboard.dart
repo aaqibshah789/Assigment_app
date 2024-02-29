@@ -1,4 +1,5 @@
 import 'package:assigment_app/data_apis/screen_dashboard_apis.dart';
+import 'package:assigment_app/data_hive/ScreenDashboardHive.dart';
 
 import 'package:assigment_app/data_hive/data/screens/show_data_screen.dart';
 import 'package:assigment_app/data_sqflite/screen_dashboard_sqflite.dart';
@@ -31,7 +32,7 @@ class _ScreenDashboardState extends State<ScreenDashboard> {
             Navigator.push(context, MaterialPageRoute(builder: (builder)=>ScreenDashboardSqflite()));
           }, child: Text("SQFLITE  Dashboard"),),
           ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (builder)=>ScreenDashboard()));
+            Navigator.push(context, MaterialPageRoute(builder: (builder)=>ScreenDashboardHive()));
           }, child: Text("hive  Dashboard"),)
         ],
       ),

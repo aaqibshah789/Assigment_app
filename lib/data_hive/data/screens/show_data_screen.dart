@@ -17,11 +17,12 @@ class ShowDataScreen extends StatefulWidget {
 
 class _ShowDataScreenState extends State<ShowDataScreen> {
   @override
+  var box =  Hive.openBox('PersonBox');
   void dispose() {
     Hive.box('PersonBox').close();
     //or
     //close all box
-     Hive.close();
+     //Hive.close();
     super.dispose();
   }
 

@@ -17,12 +17,14 @@ class _ScreenDashboardHiveState extends State<ScreenDashboardHive> {
           child: Text("Hive Dashboard")),
 
     ),
-        body:Container(
-        child: ElevatedButton(onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (builder)=>ShowDataScreen()));
-        },child: Text("add"),),
+        body:Center(
+          child: Container(
+          child: ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (builder)=>ShowDataScreen()));
+          },child: Text("ADD STUDENT RECORD"),),
 
-      ),
+                ),
+        ),
 
     );
   }

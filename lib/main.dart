@@ -1,7 +1,6 @@
 import 'package:assigment_app/Screen_Dashboard.dart';
 import 'package:flutter/material.dart';
 
-//import 'package:assigment_app/data_hive/screens/show_data_screen.dart';
 
 
 void main() {
@@ -18,10 +17,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
 
       theme: ThemeData(
-
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: false,
       ),
       home: ScreenDashboard()
     );

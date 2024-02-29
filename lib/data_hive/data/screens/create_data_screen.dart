@@ -48,7 +48,7 @@ class _CreateDataScreenState extends State<CreateDataScreen> {
                 decoration: InputDecoration(labelText: 'Grade'),
               ),
               SizedBox(height: 30,),
-              ElevatedButton(onPressed: (){
+              ElevatedButton(onPressed: () async {
                 final value = StudentData(name: _namecontroller.text,
                     roll_no: int.parse(_roll_nocontroller.text),
                     grade: _gradecontroller.text);
